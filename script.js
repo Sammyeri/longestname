@@ -23,7 +23,9 @@ function longestName(number1, number2, number3){
         console.log(`${name1} and ${name2} tie for the longest name`);
     }else if(number2 == number3 && number2>number1){
         console.log(`${name2} and ${name3} tie for the longest name`);
-    }else{
+    }else if(number1 == number3 && number1>number2){
+        console.log(`${name1} and ${name3} tie for the longest name`);
+    } else{
         console.log(`All three names, ${name1}, ${name2}, and ${name3}, are all the same length`);
     }
 }
